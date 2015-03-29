@@ -368,7 +368,7 @@ position:relative;
 /** ICONS OVER IMAGES **/
 
 
-.about-icon, .location-icon, .gifts-icon, .tableware-icon, .comments-icon   {
+.rsvp-icon, .about-icon, .location-icon, .gifts-icon, .tableware-icon, .comments-icon   {
   position:absolute;
   top:0px;
   left:0px;
@@ -385,7 +385,7 @@ position:relative;
   text-align:center;    
 }
 
-.about-icon:before, .location-icon:before, .gifts-icon:before, .tableware-icon:before, .comments-icon:before {  
+.rsvp-icon:before, .about-icon:before, .location-icon:before, .gifts-icon:before, .tableware-icon:before, .comments-icon:before {  
   position:absolute;
   width:100%;
   height:100%;
@@ -395,6 +395,10 @@ position:relative;
 
 .about-icon:before {  
   content:"\f004";
+}
+
+.rsvp-icon:before {  
+  content:"\f0e0";
 }
 
 .location-icon:before {
@@ -413,7 +417,7 @@ position:relative;
   content:"\f075";
 }
  
-.about-icon:hover, .location-icon:hover, .gifts-icon:hover, .tableware-icon:hover, .comments-icon:hover{
+.rsvp-icon:hover, .about-icon:hover, .location-icon:hover, .gifts-icon:hover, .tableware-icon:hover, .comments-icon:hover{
   opacity:0.5; 
 }
 
