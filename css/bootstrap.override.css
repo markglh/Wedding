@@ -1,5 +1,5 @@
 
-@media (max-width: 992px) {
+@media (max-width: 767px) {
   .navbar .nav{
     display:none !important;
   }
@@ -7,7 +7,7 @@
     font-family: "Open Sans",Arial,sans-serif;
     margin-top:0px;
     width:220px;
-    background: none repeat scroll 0 0 #fff;
+    
     border: 1px solid #7A828B;
     color: #7A828B;
     display: inline-block;
@@ -17,23 +17,18 @@
     height:45px;
   }
  
- .color-picker {
-  display: none; 
-}
+  .color-picker {
+    display: none; 
+  }
 
-.navbar-inner {
-  min-height: 60px;  
- }
- 
- .home-img, .home-video, .home-parallax{
-  max-height: 480px;
-  min-height:480px;
-}
+  .navbar-inner {
+    min-height: 60px;  
+  }
 
-section {
-  margin: 0;
-  padding: 60px 0px;
-}
+  section {
+    margin: 0;
+    padding: 60px 0px;
+  }
     
 }
 
