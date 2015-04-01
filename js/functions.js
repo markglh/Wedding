@@ -82,6 +82,7 @@ $('.navbar, .select-menu').onePageNav({
 
   /* FULL SCREEN BACKGROUND */
   $(window).resize(function() {
+    alert("Window:"+$(window).height());
     alert("Before: "+$('.home-parallax').height());
     $('.home-parallax').css({
       'height': $(window).height() + 'px',
