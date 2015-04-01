@@ -112,7 +112,7 @@
   width: 300px;
   height: 300px;
 } 
-.home-img, .home-video, .home-parallax{
+.home-img, .home-video{
   max-height: 410px;
   min-height:410px;
 }
@@ -133,7 +133,7 @@
   height: 250px;
 }
 
-.home-img, .home-video, .home-parallax{
+.home-img, .home-video{
   max-height: 360px;
   min-height:360px;
 }   
@@ -161,7 +161,7 @@
   height: 200px;
 }
 
-.home-img, .home-video, .home-parallax{
+.home-img, .home-video{
   max-height: 300px;
   min-height:300px;
 } 
