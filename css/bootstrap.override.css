@@ -1,5 +1,5 @@
 
-@media (max-width: 1px) {
+@media (max-width: 767px) {
   .navbar .nav{
     display:none !important;
   }
