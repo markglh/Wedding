@@ -1,5 +1,5 @@
 
-@media (max-width: 767px) {
+@media (max-width: 1px) {
   .navbar .nav{
     display:none !important;
   }
@@ -34,7 +34,7 @@
 
 /**  Bootstrap overide  768px **/
 
-@media (max-width: 768px) {
+@media (max-width: 1px) {
   body {
     padding-right: 0px;
     padding-left: 0px;
@@ -62,7 +62,7 @@
 
 /**  Bootstrap overide  568px **/
 
-@media (max-width: 568px) {
+@media (max-width: 1px) {
   .spacer160 {
     height:115px !important;
   }
@@ -85,7 +85,7 @@
 
 /**  Bootstrap overide  480px **/
 
-@media (max-width: 480px) {
+@media (max-width: 1px) {
   .flex-control-nav {
     bottom: -33px;
     position: absolute;
@@ -121,7 +121,7 @@
 
 /**  Bootstrap overide  380px **/
 
-@media (max-width: 380px) {
+@media (max-width: 1px) {
   .spacer160 {
     height:100px !important;
   }
@@ -142,7 +142,7 @@
 
 /**  Bootstrap overide  320px **/
 
-@media (max-width: 320px) {
+@media (max-width: 1px) {
   .flex-control-nav {
     bottom: -33px;
     position: absolute;
@@ -170,7 +170,7 @@
 
 /**  Bootstrap overide  240px **/
 
-@media (max-width: 240px) {
+@media (max-width: 1px) {
   .spacer160 {
     height:110px !important;
   }
