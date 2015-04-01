@@ -161,8 +161,7 @@ img {
 }
 
 /* home parallax */
-
-.home-parallax{
+.home-parallax {
   width: 100%; 
   padding: 0;
   margin: 0;
@@ -176,6 +175,45 @@ img {
 	background-position: 50% 0px !important; 
 	background-attachment: scroll !important;
 }
+
+/* BACKGROUND HEADER */
+/* Portrait 720p */
+@media only screen and (max-width : 720px) and (orientation: portrait) {
+  .home-parallax {
+    background-image:url(../img/header_720-portrait.jpg);
+  }
+}
+
+/* Portrait >720p (1080p) */
+@media only screen and (min-width : 721px) and (orientation: portrait) {
+  .home-parallax {
+    background-image:url(../img/header_1080-portrait.jpg);
+  }
+}
+
+/* Portrait 720p */
+@media only screen and (max-width : 1280px) and (orientation: landscape) {
+  .home-parallax {
+    background-image:url(../img/header_720-landscape.jpg);
+  }
+}
+
+/* Portrait 1080p */
+@media only screen and (min-width : 1281px) and (max-width : 1920px) and (orientation: landscape) {
+  .home-parallax {
+    background-image:url(../img/header_1080-landscape.jpg);
+  }
+}
+
+/* Portrait WQXGA+ */
+@media only screen and (min-width : 1921px) and (orientation: landscape) {
+  .home-parallax {
+    background-image:url(../img/header_1800-landscape.jpg);
+  }
+}
+
+/* END HEADER */
+
 
 
 section {
