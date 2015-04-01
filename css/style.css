@@ -175,11 +175,6 @@ img {
   height:540px;  
 }
 
-.parallax-mobile {
-	background-position: 50% 0px !important; 
-	background-attachment: scroll !important;
-}
-
 
 section {
   margin: 0;
