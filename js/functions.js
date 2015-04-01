@@ -66,7 +66,7 @@ $('.navbar, .select-menu').onePageNav({
 
 /*  PARALLAX */
 
-  if (detectmob === true) {
+  if (false) {
     $( '.home-parallax' ).each(function(){
         $(this).addClass('parallax-mobile');
     });

@@ -178,12 +178,6 @@ img {
 .parallax-mobile {
 	background-position: 50% 0px !important; 
 	background-attachment: scroll !important;
-  display: 'none';
-  margin: '0';
-        padding: '0';
-        listStyle: 'none';
-        position: 'relative';
-        height: '100%';
 }
 
 
