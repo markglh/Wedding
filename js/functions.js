@@ -66,10 +66,11 @@ $('.navbar, .select-menu').onePageNav({
 
 /*  PARALLAX */
 
-  if (false) {
+  if (detectmob === true) {
     $( '.home-parallax' ).each(function(){
         $(this).addClass('parallax-mobile');
     });
+    alert("here");
   }
   else {
     //.parallax(xPosition, speedFactor, outerHeight) options:
