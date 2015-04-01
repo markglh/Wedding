@@ -82,12 +82,12 @@ $('.navbar, .select-menu').onePageNav({
 
   /* FULL SCREEN BACKGROUND */
   $(window).resize(function() {
-    alert("resize");
+    alert("Before: "+$('.home-parallax').height());
     $('.home-parallax').css({
       'height': $(window).height() + 'px',
       'width': $(window).width() + 'px'
     });
-    alert($('.home-parallax').css);
+    alert("After: "+$('.home-parallax').height());
 
     var $images =  $('.home-parallax').find('img');
     alert($images.length);
