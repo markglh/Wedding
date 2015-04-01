@@ -82,13 +82,15 @@ $('.navbar, .select-menu').onePageNav({
 
   /* FULL SCREEN BACKGROUND */
   $(window).resize(function() {
+    alert("resize");
     $('.home-parallax').css({
       'height': $(window).height() + 'px',
       'width': $(window).width() + 'px'
     });
+    alert($('.home-parallax').css);
 
     var $images =  $('.home-parallax').find('img');
-    //alert($images.length);
+    alert($images.length);
 
     $images.removeAttr('width').removeAttr('height')
       .css({
