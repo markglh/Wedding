@@ -86,7 +86,20 @@ $('.navbar, .select-menu').onePageNav({
       'height': $(window).height() + 'px',
       'width': $(window).width() + 'px'
     });
-  });
+
+    var $images =  $('.home-parallax').find('img');
+    //alert($images.length);
+
+    $images.removeAttr('width').removeAttr('height')
+      .css({
+        "-webkit-backface-visibility": 'hidden',
+        "-ms-interpolation-mode": 'bicubic',
+        "left": '0',
+        "top": '0',
+        "z-index": '-1',
+        "max-width": 'none'
+      });
+    });
 
   $(window).trigger('resize');
 
