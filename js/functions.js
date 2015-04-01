@@ -70,7 +70,6 @@ $('.navbar, .select-menu').onePageNav({
     $( '.home-parallax' ).each(function(){
         $(this).addClass('parallax-mobile');
     });
-    alert("here");
   }
   else {
     //.parallax(xPosition, speedFactor, outerHeight) options:
