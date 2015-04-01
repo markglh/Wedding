@@ -82,27 +82,11 @@ $('.navbar, .select-menu').onePageNav({
 
   /* FULL SCREEN BACKGROUND */
   $(window).resize(function() {
-    alert("Window:"+$(window).height());
-    alert("Before: "+$('.home-parallax').height());
     $('.home-parallax').css({
       'height': $(window).height() + 'px',
       'width': $(window).width() + 'px'
     });
-    alert("After: "+$('.home-parallax').height());
-
-    var $images =  $('.home-parallax').find('img');
-    alert($images.length);
-
-    $images.removeAttr('width').removeAttr('height')
-      .css({
-        "-webkit-backface-visibility": 'hidden',
-        "-ms-interpolation-mode": 'bicubic',
-        "left": '0',
-        "top": '0',
-        "z-index": '-1',
-        "max-width": 'none'
-      });
-    });
+  });
 
   $(window).trigger('resize');
 
