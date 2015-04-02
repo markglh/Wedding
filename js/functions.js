@@ -85,6 +85,7 @@ $('.navbar, .select-menu').onePageNav({
     $('.home-parallax').css({
       'height': $(window).height() + 'px'
     });
+    alert($(window).height() + "*" + $(window).width());
   });
 
   $(window).trigger('resize');
