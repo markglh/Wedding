@@ -219,17 +219,9 @@ img {
 }
 
 /* Landscape 1080p */
-@media only screen and (min-width : 1601px) and (max-width : 1920px) and (orientation: landscape) {
+@media only screen and (min-width : 1601px) and (orientation: landscape) {
   .home-parallax {
     background-image:url(../img/header_1920-1080-landscape.jpg);
-  }
-}
-
-
-/* Landscape WQXGA+ */
-@media only screen and (min-width : 1921px) and (orientation: landscape) {
-  .home-parallax {
-    background-image:url(../img/header_3200-1800-landscape.jpg);
   }
 }
 
