@@ -165,14 +165,12 @@ img {
   width: 100%; 
   padding: 0;
   margin: 0;
+
   background-attachment: fixed;
   background-repeat: no-repeat;
-
   background-size: cover;
-  width: auto;
-  max-height: 100%;
   background-repeat: no-repeat;
-  
+
   color: #FFFFFF;
   height:540px;  
   background-image:url(../img/header_1366-768_landscape.jpg);

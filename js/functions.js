@@ -83,7 +83,9 @@ $('.navbar, .select-menu').onePageNav({
   /* FULL SCREEN BACKGROUND */
   $(window).resize(function() {
     $('.home-parallax').css({
-      'height': $(window).height() + 'px'
+      'height': $(window).height() + 'px',
+      'width': $(window).width() + 'px',
+      'max-width': $(window).width() + 'px'
     });
     //alert($(window).height() + "*" + $(window).width());
   });
