@@ -169,6 +169,7 @@ img {
   background-repeat: no-repeat;  
   color: #FFFFFF;
   height:540px;  
+  background-image:url(../img/header_1366-768_landscape.jpg);
 }
 
 .parallax-mobile {
@@ -176,39 +177,58 @@ img {
 	background-attachment: scroll !important;
 }
 
-/* BACKGROUND HEADER */
-/* Portrait 720p */
-@media only screen and (max-width : 720px) and (orientation: portrait) {
+/** BACKGROUND HEADER **/
+
+/* Landscape WQXGA+ */
+@media only screen and (min-width : 1921px) and (orientation: landscape) {
   .home-parallax {
-    background-image:url(../img/header_720-portrait.jpg);
+    background-image:url(../img/header_3200-1800-landscape.jpg);
   }
 }
 
 /* Portrait >720p (1080p) */
-@media only screen and (min-width : 721px) and (orientation: portrait) {
+@media only screen and (min-width : 901px) and (orientation: portrait),
+@media only screen and (max-width: 450px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
   .home-parallax {
-    background-image:url(../img/header_1080-portrait.jpg);
+    background-image:url(../img/header_1920-1080-portrait.jpg);
   }
 }
 
-/* Portrait 720p */
-@media only screen and (max-width : 1280px) and (orientation: landscape) {
+/* Landscape 1080p & Super Retina Mobile (iphone6+, galaxy s5+ etc) */
+@media only screen and (min-width : 1601px) and (max-width : 1920px) and (orientation: landscape),
+@media only screen and (max-width: 800px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
   .home-parallax {
-    background-image:url(../img/header_720-landscape.jpg);
+    background-image:url(../img/header_1920-1080-landscape.jpg);
   }
 }
 
-/* Portrait 1080p */
-@media only screen and (min-width : 1281px) and (max-width : 1920px) and (orientation: landscape) {
+/* Portrait 1600*900 */
+@media only screen and (min-width : 769px) and (max-width : 900px) and (orientation: portrait) {
   .home-parallax {
-    background-image:url(../img/header_1080-landscape.jpg);
+    background-image:url(../img/header_1600-900_portrait.jpg);
   }
 }
 
-/* Portrait WQXGA+ */
-@media only screen and (min-width : 1921px) and (orientation: landscape) {
+/* Landscape 1600*900 */
+@media only screen and (min-width : 1367px) and (max-width : 1600px) and (orientation: landscape) {
   .home-parallax {
-    background-image:url(../img/header_1800-landscape.jpg);
+    background-image:url(../img/header_1600-900_landscape.jpg);
+  }
+}
+
+/* Portrait 1366*768 & Retina Mobile (iphone) */
+@media only screen and (max-width : 768px) and (orientation: portrait),
+@media only screen and (max-width: 400px) and (-webkit-min-device-pixel-ratio: 2)and (-webkit-max-device-pixel-ratio: 2.9) and (orientation: portrait) { 
+  .home-parallax {
+    background-image:url(../img/header_1366-768_portrait.jpg);
+  }
+}
+
+/* Landscape 1366*768 & Retina Mobile (iphone) */
+@media only screen and (max-width : 1366px) and (orientation: landscape),
+@media only screen and (max-width: 700px) and (-webkit-min-device-pixel-ratio: 2) and (-webkit-max-device-pixel-ratio: 2.9) and (orientation: landscape) { 
+  .home-parallax {
+    background-image:url(../img/header_1366-768_landscape.jpg);
   }
 }
 
