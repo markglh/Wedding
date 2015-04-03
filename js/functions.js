@@ -112,9 +112,6 @@ $('.navbar, .select-menu').onePageNav({
 /* SWIPEBOX */
 $( '.swipebox' ).swipebox();
 
-
- jQuery(".player").mb_YTPlayer();
-
 /* SCROLL   */
 $(".select-menu").change(function() {
   
