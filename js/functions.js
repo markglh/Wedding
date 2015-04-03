@@ -82,7 +82,15 @@ $('.navbar, .select-menu').onePageNav({
 
   /* FULL SCREEN BACKGROUND */
   $(window).resize(function() {
-    alert("Height increased by: "+$(window).height()-$('.home-parallax').height);
+
+    var newWidth = $(window).width();
+    var newHeight = $(window).height();
+    var heightChange = Math.abs(newHeight - $('.home-parallax').height());
+
+    alert("Old height "+ $('.home-parallax').height());
+    alert("Height increased by: "+ heightChange);
+
+    //if(heightChange)
     $('.home-parallax').css({
       'height': $(window).height() + 'px',
       'width': $(window).width() + 'px',
