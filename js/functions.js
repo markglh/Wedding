@@ -64,7 +64,7 @@ $('.navbar, .select-menu').onePageNav({
   }
 
 
-/*  PARALLAX */
+  /*  PARALLAX */
 
   if (detectmob === true) {
     $( '.home-parallax' ).each(function(){
@@ -76,7 +76,7 @@ $('.navbar, .select-menu').onePageNav({
     //xPosition - Horizontal position of the element
     //inertia - speed to move relative to vertical scroll. Example: 0.1 is one tenth the speed of scrolling, 2 is twice the speed of scrolling
     //outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
-      $( '.home-parallax' ).parallax("10%", 0.1,true);
+    $( '.home-parallax' ).parallax("10%", 0.1,true);
   }  
 
 
@@ -87,12 +87,13 @@ $('.navbar, .select-menu').onePageNav({
       var newWidth = $(window).width();
       var newHeight = $(window).height();
       var heightChange = Math.abs(newHeight - $('.home-parallax').height());
+      var widthChange = Math.abs(newWidth - $('.home-parallax').width());
 
       //alert("Height increased by: "+ heightChange);
 
       /*  The heightChange is to prevent the page jumping on 
           browsers with dynamic address bars (mobile chrome) */
-      if(firstLoad || heightChange > 60) {
+      if(firstLoad || heightChange > 60 || widthChange > 0) {
         $('.home-parallax').css({
           'height': $(window).height() + 'px',
           'width': $(window).width() + 'px',
@@ -130,8 +131,8 @@ $(".select-menu").change(function() {
     $(".fittext3").fitText(0.4, { minFontSize: '15px', maxFontSize: '45px' });
     $(".fittext4").fitText(1.5, { minFontSize: '15px', maxFontSize: '24px' });
 
-/*  External Links  */  
 
+/*  External Links  */  
   (function() {
       $(window).load(function() {
       $('a[rel=external]').attr('target','_blank'); 
@@ -139,9 +140,8 @@ $(".select-menu").change(function() {
   })();  
 
 
-/*  Flex Initialize */  
-
-$(window).load(function() {
+  /*  Flex Initialize */  
+  $(window).load(function() {
  
   /*header carousel slider */
   $('.slider1').flexslider({
@@ -187,126 +187,16 @@ $(window).load(function() {
 });
 
 
-
-//  Portfolio - isotope   
-  
-  (function() {
-   
-    $(window).load(function(){
-      // container
-      var $container = $('#portfolio-items');
-      function filter_projects(tag)
-      {
-        // filter projects
-        $container.isotope({ filter: tag });
-        // clear active class
-        $('li.act').removeClass('act');
-        // add active class to filter selector
-        $('#portfolio-filter').find("[data-filter='" + tag + "']").parent().addClass('act');
-      }
-      if ($container.length) {
-        // conver data-tags to classes
-        $('.project').each(function(){
-          var $this = $(this);
-          var tags = $this.data('tags');
-          if (tags) {
-            var classes = tags.split(',');
-            for (var i = classes.length - 1; i >= 0; i--) {
-              $this.addClass(classes[i]);
-            };
-          }
-        })
-        // initialize isotope
-        $container.isotope({
-          // options...
-          itemSelector : '.project',
-          layoutMode   : 'fitRows'
-        });
-        // filter items
-        $('#portfolio-filter li a').click(function(){
-          var selector = $(this).attr('data-filter');
-          filter_projects(selector);
-          return false;
-        });
-        // filter tags if location.has is available. e.g. http://example.com/work.html#design will filter projects within this category
-        if (window.location.hash!='')
-        {
-          filter_projects( '.' + window.location.hash.replace('#','') );
-        }
-      }
-    })
-
-  })();
- 
-
-
-
-
 /* preloading */
- 
 $(window).load(function() {
   $("#loadind").fadeOut();
   $("#loading-wrap").delay(150).fadeOut("fast");
 })
+
+$(document).ready(function() {
  
-
-// color picker
-
-
-$(".color-1" ).click(function(){
-  $("#color" ).attr("href", "css/color/color-1.css" );
-  return false;
+  $("#owl-example").owlCarousel();
+ 
 });
-
-    
-$(".color-2" ).click(function(){
-  $("#color" ).attr("href", "css/color/color-2.css" );
-  return false;
-});
-    
-$(".color-3" ).click(function(){
-  $("#color" ).attr("href", "css/color/color-3.css" );
-  return false;
-});
-
-$(".color-4" ).click(function(){
-  $("#color" ).attr("href", "css/color/color-4.css" );
-  return false;
-});
-
-$(".color-5" ).click(function(){
-  $("#color" ).attr("href", "css/color/color-5.css" );
-  return false;
-});
-
-$(".color-6" ).click(function(){
-  $("#color" ).attr("href", "css/color/color-6.css" );
-  return false;
-});
-
-$(".color-7" ).click(function(){
-  $("#color" ).attr("href", "css/color/color-7.css" );
-  return false;
-});
-
-$(".color-8" ).click(function(){
-  $("#color" ).attr("href", "css/color/color-8.css" );
-  return false;
-});
-
-
-$('.color-picker').animate({right: '-239px'});
-      
-$('.color-picker a.handle').click(function(e){
-  e.preventDefault();
-  var div = $('.color-picker');
-  if (div.css('right') === '-239px') {
-    $('.color-picker').animate({right: '0px'}); 
-  } 
-  else {
-    $('.color-picker').animate({right: '-239px'});
-  }
-})
-
 
 }); 
