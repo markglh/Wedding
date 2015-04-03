@@ -193,10 +193,4 @@ $(window).load(function() {
   $("#loading-wrap").delay(150).fadeOut("fast");
 })
 
-$(document).ready(function() {
- 
-  $("#owl-example").owlCarousel();
- 
-});
-
 }); 
