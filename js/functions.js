@@ -88,15 +88,17 @@ $('.navbar, .select-menu').onePageNav({
       var newHeight = $(window).height();
       var heightChange = Math.abs(newHeight - $('.home-parallax').height());
 
-      alert("Height increased by: "+ heightChange);
+      //alert("Height increased by: "+ heightChange);
 
+      /*  The heightChange is to prevent the page jumping on 
+          browsers with dynamic address bars (mobile chrome) */
       if(firstLoad || heightChange > 60) {
         $('.home-parallax').css({
           'height': $(window).height() + 'px',
           'width': $(window).width() + 'px',
           'max-width': $(window).width() + 'px'
         });
-        alert($(window).height() + "*" + $(window).width());
+        //alert($(window).height() + "*" + $(window).width());
       }
   }
 
