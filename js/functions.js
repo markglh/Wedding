@@ -82,12 +82,14 @@ $('.navbar, .select-menu').onePageNav({
 
   /* FULL SCREEN BACKGROUND */
   $(window).resize(function() {
+    alert("Height increased by: "+$(window).height()-$('.home-parallax').height);
     $('.home-parallax').css({
       'height': $(window).height() + 'px',
       'width': $(window).width() + 'px',
       'max-width': $(window).width() + 'px'
     });
-    //alert($(window).height() + "*" + $(window).width());
+    alert($(window).height() + "*" + $(window).width());
+
   });
 
   $(window).trigger('resize');
