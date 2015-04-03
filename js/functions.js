@@ -81,26 +81,30 @@ $('.navbar, .select-menu').onePageNav({
 
 
   /* FULL SCREEN BACKGROUND */
+
+  function updateHeight(firstLoad)
+  {
+      var newWidth = $(window).width();
+      var newHeight = $(window).height();
+      var heightChange = Math.abs(newHeight - $('.home-parallax').height());
+
+      alert("Height increased by: "+ heightChange);
+
+      if(firstLoad || heightChange > 60) {
+        $('.home-parallax').css({
+          'height': $(window).height() + 'px',
+          'width': $(window).width() + 'px',
+          'max-width': $(window).width() + 'px'
+        });
+        alert($(window).height() + "*" + $(window).width());
+      }
+  }
+
+  updateHeight(true);
+
   $(window).resize(function() {
-
-    var newWidth = $(window).width();
-    var newHeight = $(window).height();
-    var heightChange = Math.abs(newHeight - $('.home-parallax').height());
-
-    alert("Old height "+ $('.home-parallax').height());
-    alert("Height increased by: "+ heightChange);
-
-    //if(heightChange)
-    $('.home-parallax').css({
-      'height': $(window).height() + 'px',
-      'width': $(window).width() + 'px',
-      'max-width': $(window).width() + 'px'
-    });
-    alert($(window).height() + "*" + $(window).width());
-
+    updateHeight(false);
   });
-
-  $(window).trigger('resize');
 
 
 /* SWIPEBOX */
