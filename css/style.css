@@ -78,6 +78,11 @@ p {
   overflow:hidden;
 }
 
+.poem p {
+  font-size: 18px;
+  font-family: 'Indie Flower', cursive;
+}
+
 a, a:active, a:focus {
   text-decoration:none;
 }
@@ -480,7 +485,7 @@ position:relative;
 }
 
 .rsvp-icon:before {  
-  content:"\f0e0";
+  content:"\f234";
 }
 
 .location-icon:before {
