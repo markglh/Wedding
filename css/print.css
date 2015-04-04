@@ -1,0 +1,45 @@
+
+.circle {
+	border-style: solid;
+	width:225px;
+  	height:225px;
+}
+
+.fullscreen-header-table {
+	min-height: 0%;
+	height: 225px;
+}
+
+.fittext1 {
+	font-size: 21.5px !important;
+}
+
+.fittext2 {
+	font-size: 54.7px !important;
+}
+
+.fittext3 {
+	font-size: 45px !important;
+}
+
+.home-parallax {
+	height: 250px !important;
+}
+
+.sticky-wrapper {
+	display: none;
+}
+
+.spacer100 {
+	display: none;
+}
+
+section {
+	padding: 30px 0px !important;
+}
+
+/* Bootstrap override for columns */
+.col-md-4 {
+	float: left;
+	width: 50%;
+}

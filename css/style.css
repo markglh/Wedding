@@ -272,8 +272,15 @@ section {
 }
 
 
-.dark {
-  background: #797880;
+.dark { 
+  width: 80%;
+  text-align: center; 
+  margin: 0 auto;
+    border: none;
+    color: white;
+    height: 1px;
+    background: #797880;
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(#000), to(#fff));
 }
 
 /** POSITION **/

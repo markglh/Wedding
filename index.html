@@ -7,26 +7,28 @@
   <head>
     <meta charset="utf-8">
     <title>Mark &amp; Kelly's Wedding</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="description" content="Mark &amp; Kelly's Wedding">
     <!-- Favicon --> 
     <link href="img/vow-favicon.png" rel="icon" type="image/png">
     <!-- bootstrap css -->    
-    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" >
     <!-- Animate Style -->
     <link href="css/animate.css" rel="stylesheet">
     <!-- Flex slider css -->
-    <link href="css/flexslider.css" rel="stylesheet" type="text/css" media="screen">    
+    <link href="css/flexslider.css" rel="stylesheet" type="text/css">    
     <!-- Font Awesome Styles -->
     <link href="css/font-awesome.min.css" rel="stylesheet">      
     <!-- Style css -->
-    <link href="css/style.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="css/style.css" rel="stylesheet" type="text/css" >
+    <!-- print specific styles -->
+    <link href="css/print.css" rel="stylesheet" type="text/css" media="print">
     <!-- components css -->
-    <link href="css/components.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="css/components.css" rel="stylesheet" type="text/css" >
     <!-- Main color scheme -->
     <link href="css/color/color.css" rel="stylesheet" id="color">  
     <!-- override css -->
-    <link href="css/bootstrap.override.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="css/bootstrap.override.css" rel="stylesheet" type="text/css" >
     <!-- Swipebox-->
     <link rel="stylesheet" href="css/swipebox.min.css">   
        
@@ -46,45 +48,43 @@
   </div>
 
 <header id="home" class="home-parallax"> 
-<div class="fullscreen-header-table">
-<div class="fullscreen-header-table-cell">   
-<div class="container">
-  <div class="row">
-    <div class="col-md-12">
-      <div class="circle">
-        <div class="table-cell">
-          <h1 class="fittext1">The Wedding of</h1>
-          <h2 class="fittext2">Mark &amp; Kelly</h2>
-          <h3 class="fittext3">09.08.2015</h3>
+  <div class="fullscreen-header-table">
+    <div class="fullscreen-header-table-cell">   
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="circle">
+              <div class="table-cell">
+                <h1 class="fittext1">The Wedding of</h1>
+                <h2 class="fittext2">Mark &amp; Kelly</h2>
+                <h3 class="fittext3">09.08.2015</h3>
+              </div>
+            </div> 
+          </div> 
         </div>
-      </div> 
-    </div> 
-  </div>
-</div>
+      </div>
 
 
-<div class="spacer100"></div>
-    <div class="navbar">
-      <div class="navbar-inner">
-        <div class="container">       
-          <ul class="nav">
-            <li><a href="#home" title="Home"><i class="fa fa-home"></i></a></li>    
-            <li><a href="#location" title="Location"><i class="fa fa-map-marker"></i></a></li>  
-            <li><a href="#gifts" title="Gifts"><i class="fa fa-gift"></i></a></li>  
-            <li><a href="#rsvp" title="RSVP"><i class="fa fa-envelope"></i></a></li>
-          </ul>
-          <select class="select-menu"></select>
+      <div class="spacer100"></div>
+      <div class="navbar">
+        <div class="navbar-inner">
+          <div class="container">       
+            <ul class="nav">
+              <li><a href="#home" title="Home"><i class="fa fa-home"></i></a></li>    
+              <li><a href="#location" title="Location"><i class="fa fa-map-marker"></i></a></li>  
+              <li><a href="#gifts" title="Gifts"><i class="fa fa-gift"></i></a></li>  
+              <li><a href="#rsvp" title="RSVP"><i class="fa fa-envelope"></i></a></li>
+            </ul>
+            <select class="select-menu"></select>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
-  
- </div> 
 </header>  
 
   <!-- Slider -->
-  <div class="slider1 flexslider">
+  <div class="slider1 flexslider hidden-print">
     <ul class="slides">
       <li>      
         <div class="slides-top square">
@@ -137,7 +137,7 @@
         <p>Both the Ceremony and Reception will take place at Bartle Hall, for detailed directions please follow the link below.</p>
         <p><a href="http://www.bartlehall.co.uk/about-us/how-to-find-us/">http://www.bartlehall.co.uk</a></p>
       </div>
-      <div class="col-md-4 animated" data-type="bounceIn">
+      <div class="col-md-4 animated hidden-print" data-type="bounceIn">
           <div class="square-all">
             <div class="img-container">              
               <img src="img/2.jpg" alt="location" class="img-circle">
@@ -158,7 +158,7 @@
         <h2>Ceremony</h2>
         <p>The ceremony will take place at 14:30.......</p> 
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 hidden-print">
         <a rel="external" href="https://www.google.co.uk/maps/place/Bartle+Hall+Hotel/@53.793275,-2.781352,14z/data=!4m6!1m3!3m2!1s0x487b6c3dfd6c55b9:0xdec7b66def662bf!2sBartle+Hall+Hotel!3m1!1s0x487b6c3dfd6c55b9:0xdec7b66def662bf" title="Click to open google map for exact location">
           <img src="img/google_map.png" alt="google_map" class="img-210">
         </a>   
@@ -181,7 +181,7 @@
         <h2>Your company is the most important</h2>
         <p>What we really want more than anything is ......</p>
       </div>
-      <div class="col-md-4 animated" data-type="bounceIn">
+      <div class="col-md-4 animated hidden-print" data-type="bounceIn">
           <div class="square-all">
             <div class="img-container">              
               <img src="img/3.jpg" alt="gifts" class="img-circle">
@@ -211,7 +211,7 @@
         <p>Everyone should have received a personal email with a link to both their invividual RSVP page and this website.</p>
         <p><img src="img/signature-1.png" alt="signature" class="pull-right signature"></p>
       </div><!-- /.col-md-4 -->
-      <div class="col-md-4 animated" data-type="bounceIn">
+      <div class="col-md-4 animated hidden-print" data-type="bounceIn">
           <div class="square-all">
             <div class="img-container">              
               <img src="img/1.jpg" alt="RSVP" class="img-circle">
@@ -228,14 +228,15 @@
   </div><!-- /.container -->
 </section> 
 <!-- RSVP ENDS --> 
+
+<hr class="dark">
      
 <!-- FOOTER -->      
 <footer>
-  <div class="container">
+  <div class="container hidden-print">
     <div class="row">
       <div class="col-md-12">
-        <hr class="dark">
-          <p class="center"></p>
+        <p class="center"></p>
       </div>
     </div>
 
