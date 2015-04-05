@@ -36,6 +36,7 @@
 
 section {
 	padding: 20px 0px !important;
+	page-break-inside: avoid;
 }
 
 /* Bootstrap override for columns */

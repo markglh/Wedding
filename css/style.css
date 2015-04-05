@@ -78,10 +78,10 @@ p {
   overflow:hidden;
 }
 
-.poem p {
+/*.poem p {
   font-size: 18px;
   font-family: 'Indie Flower', cursive;
-}
+}*/
 
 a, a:active, a:focus {
   text-decoration:none;
